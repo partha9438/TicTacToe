@@ -1,0 +1,59 @@
+body{
+    background-color:blueviolet
+}
+
+.container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .board {
+   background-color: white;
+   border: 2px solid black;
+   border-radius:30px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   width: 243px;
+   margin: 20px auto;
+  }
+   .cell {
+    border: 1px solid grey;
+    
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+  }
+  
+  
+  button {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+ #start-button{
+    border-radius: 10px;
+ }
+ #player1{
+    margin-bottom: 5px;
+ }
+ input{
+    border-radius: 7px;
+    padding: 10px;
+ }
+ 
+  .current-player {
+    color: blueviolet;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+ 

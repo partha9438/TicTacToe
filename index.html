@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="heading">Tic Tac Toe</h1>
+    <div id="player-form">
+      <label for="player1">Player 1:</label>
+      <input type="text" id="player1" placeholder="Enter Player 1's name">
+      <br>
+      <label for="player2">Player 2:</label>
+      <input type="text" id="player2" placeholder="Enter Player 2's name">
+      <br>
+      <button id="start-button">Start Game</button>
+    </div>
+    <div id="game-board" class="hidden">
+      <h2 id="current-player"></h2>
+        <div class="board">
+        <div class="cell" onclick="makeMove(0, 0)" id="cell-0-0" style="border-radius: 30px 0px 0px 0px;"></div>
+        <div class="cell" onclick="makeMove(0, 1)" id="cell-0-1"></div>
+        <div class="cell" onclick="makeMove(0, 2)" id="cell-0-2" style="border-radius: 0px 30px 0px 0px ;"></div>
+        <div class="cell" onclick="makeMove(1, 0)" id="cell-1-0"></div>
+        <div class="cell" onclick="makeMove(1, 1)" id="cell-1-1"></div>
+        <div class="cell" onclick="makeMove(1, 2)" id="cell-1-2"></div>
+        <div class="cell" onclick="makeMove(2, 0)" id="cell-2-0" style="border-radius: 0px 0px 0px 30px;"></div>
+        <div class="cell" onclick="makeMove(2, 1)" id="cell-2-1"></div>
+        <div class="cell" onclick="makeMove(2, 2)" id="cell-2-2" style="border-radius: 0px 0px 30px 0px ;"></div>
+       </div>
+       <button id="reset-button" onclick="resetGame()">Reset</button>
+    </div>
+    <div id="winner-message" class="hidden">
+      <h2 id="winner-name"></h2>
+      <button id="restart-button" onclick="restartGame()">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
